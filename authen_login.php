@@ -6,7 +6,7 @@
     // Assigning POST values to variables.
     global $username;
     $username = $_POST['StudID'];
-    $password = $_POST['password'];
+    $password = hash('sha256',$_POST['password']);
 
     // CHECK FOR THE RECORD FROM TABLE
     $query = "SELECT * FROM `students` WHERE StudID='$username' and Password='$password'";
