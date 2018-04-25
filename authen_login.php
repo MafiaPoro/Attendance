@@ -18,7 +18,7 @@
     {
       //echo "Login Credentials verified";
       echo "<script type='text/javascript'>alert('Login Credentials verified')</script>";
-      require('http://funny-husky-62.localtunnel.me/loggedIn.php');
+      require('LoggedIn.php');
       //header( 'Location: LoggedIn');
     }
     else
